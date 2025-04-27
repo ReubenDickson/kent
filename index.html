@@ -3,1172 +3,397 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organize My Life Conference- Harutek Global Initiative</title>
-    
-    <script>
-              // VIDEO animation
-               document.addEventListener('DOMContentLoaded', function() {
-            const videoId = 'Q5_1HpVpxl8'; // Replace with your actual YouTube video ID
-            const thumbnail = document.getElementById('video-thumbnail');
-            const player = document.getElementById('youtube-player');
-            const playButton = document.getElementById('play-button');
+    <title>Organize My Life Conference - Repositioning for a Life That Works</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<style>
+    /* Speakers Section Styles */
+    .speakers-section {
+        padding: 80px 0;
+        background-color: #f8f9fa;
+        font-family: 'Arial', sans-serif;
+    }
 
-            // Set the YouTube embed URL with autoplay parameter
-            const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
-            
-            // Play video when clicking on thumbnail or play button
-            thumbnail.addEventListener('click', function() {
-                player.src = embedUrl;
-                thumbnail.querySelector('img').classList.add('fade-out');
-                playButton.classList.add('fade-out');
-                player.classList.add('fade-in');
-            });
+    .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+        color: #333;
+    }
 
-            // Preload YouTube iframe API
-            const tag = document.createElement('script');
-            tag.src = 'https://www.youtube.com/iframe_api';
-            const firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        });
-    </script>
-    <style>
-        :root {
-            /* Primary Colors */
-            --primary: #430069;
-            --primary-light: #661098;
-            --primary-dark: #2a0042;
-            
-            /* Secondary Colors */
-            --secondary: #ff9696;
-            --secondary-light: #ffb7b7;
-            --secondary-dark: #ff7575;
-            
-            /* Neutral Colors */
-            --dark: #333333;
-            --light: #f5f5f5;
-            --white: #ffffff;
-            
-            /* Additional Colors */
-            --accent: #00c9a7;
-            --accent-light: #6bffde;
-            --accent-dark: #008f75;
-            
-            /* Font Settings */
-            --font-heading: 'Montserrat', sans-serif;
-            --font-body: 'Open Sans', sans-serif;
-            
-            /* Spacing */
-            --spacing-xs: 0.5rem;
-            --spacing-sm: 1rem;
-            --spacing-md: 2rem;
-            --spacing-lg: 4rem;
-            --spacing-xl: 8rem;
-            
-            /* Border Radius */
-            --radius-sm: 4px;
-            --radius-md: 8px;
-            --radius-lg: 16px;
-            
-            /* Shadows */
-            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
-            --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
-            --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: var(--font-body);
-            color: var(--dark);
-            line-height: 1.6;
-            background-color: var(--light);
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-            padding: var(--spacing-md);
-        }
-        
-        .section {
-            background: linear-gradient(135deg, var(--light) 0%, var(--primary-dark) 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-            padding: var(--spacing-md);
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='rgba(255,255,255,.05)' fill-rule='evenodd'/%3E%3C/svg%3E");
-            opacity: 0.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .hero-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            color: var(--white);
-        }
-        
-        .headline {
-            font-family: var(--font-heading);
-            font-size: 3.5rem;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: var(--spacing-md);
-            background: linear-gradient(90deg, var(--white) 0%, var(--secondary-light) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        
-        .headline span {
-            color: var(--secondary);
-            -webkit-text-fill-color: var(--secondary);
-        }
-        
-        .subheading {
-            font-family: var(--font-heading);
-            font-size: 2rem;
-            font-weight: 600;
-            margin-bottom: var(--spacing-sm);
-            color: var(--secondary);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        
-        .sub-subheading {
-            font-family: var(--font-body);
-            font-size: 1.25rem;
-            font-weight: 400;
-            margin-bottom: var(--spacing-lg);
-            color: var(--white);
-            letter-spacing: 1px;
-        }
-        
-        .countdown {
-            display: flex;
-            justify-content: center;
-            margin-bottom: var(--spacing-lg);
-            gap: var(--spacing-sm);
-        }
-        
-        .countdown-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: var(--radius-md);
-            padding: var(--spacing-sm);
-            min-width: 80px;
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .countdown-number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--white);
-        }
-        
-        .countdown-label {
-            font-size: 0.875rem;
-            color: var(--secondary-light);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(90deg, var(--secondary) 0%, var(--secondary-dark) 100%);
-            color: var(--white);
-            font-family: var(--font-heading);
-            font-size: 1.25rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            padding: 1.25rem 2.5rem;
-            border-radius: var(--radius-md);
-            text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow-md), 0 0 15px rgba(255, 150, 150, 0.5);
-            border: none;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg), 0 0 20px rgba(255, 150, 150, 0.7);
-        }
-        
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            transition: all 0.6s ease;
-        }
-        
-        .cta-button:hover::before {
-            left: 100%;
-        }
-        
-        @media (max-width: 768px) {
-            .headline {
-                font-size: 2.5rem;
-            }
-            
-            .subheading {
-                font-size: 1.5rem;
-            }
-            
-            .sub-subheading {
-                font-size: 1rem;
-            }
-            
-            .countdown {
-                flex-wrap: wrap;
-            }
-            
-            .countdown-item {
-                min-width: 70px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .headline {
-                font-size: 2rem;
-            }
-            
-            .countdown-item {
-                min-width: 60px;
-                padding: var(--spacing-xs);
-            }
-            
-            .countdown-number {
-                font-size: 1.5rem;
-            }
-            
-            .cta-button {
-                padding: 1rem 2rem;
-                font-size: 1rem;
-            }
-        }
-        
-        /* Header Styles */
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.98);
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-            padding: 20px 0;
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
+    .section-title h2 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
 
-        /* Add class for scrolled state */
-        .header.scrolled {
-            padding: 15px 0;
-            background-color: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-        }
+    .section-title p {
+        font-size: 18px;
+        color: #666;
+        max-width: 700px;
+        margin: 0 auto;
+    }
 
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .speakers-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-        }
+    .speakers-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+    }
 
-        .logo-image {
-            height: 40px;
-            margin-right: 10px;
-            transition: all 0.3s ease;
-        }
+    .speaker-card {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        .header.scrolled .logo-image {
-            height: 35px;
-        }
+    .speaker-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
 
-        .logo-text {
-            font-size: 24px;
-            font-weight: 700;
-            color: #333;
-            transition: all 0.3s ease;
-        }
+    .speaker-image {
+        height: 250px;
+        overflow: hidden;
+    }
 
-        .header.scrolled .logo-text {
-            font-size: 22px;
-        }
+    .speaker-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
 
-        .nav-menu {
-            display: flex;
-            align-items: center;
-        }
+    .speaker-card:hover .speaker-image img {
+        transform: scale(1.05);
+    }
 
-        .cta-button {
-            display: inline-block;
-            background-color: var(--secondary-light);
-            color: #fff;
-            font-size: 16px;
-            font-weight: 600;
-            padding: 12px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: 0.5px solid #4a6fdc;
-        }
+    .speaker-info {
+        padding: 25px;
+    }
 
-        .cta-button:hover {
-            background-color: #3658ba;
-            border-color: #3658ba;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(74, 111, 220, 0.4);
-        }
+    .speaker-name {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: #333;
+    }
 
-        .header.scrolled .cta-button {
-            padding: 10px 25px;
-            font-size: 15px;
-        }
+    .talk-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #4a6fdc;
+        margin-bottom: 10px;
+    }
 
-        /* Mobile menu button */
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 5px;
-        }
+    .talk-date {
+        display: inline-block;
+        font-size: 14px;
+        color: #fff;
+        background-color: #4a6fdc;
+        padding: 5px 12px;
+        border-radius: 20px;
+        margin-bottom: 15px;
+    }
 
-        .mobile-menu-btn span {
-            display: block;
-            width: 30px;
-            height: 3px;
-            background-color: #333;
-            margin: 6px 0;
-            transition: all 0.3s ease;
-        }
+    .talk-description {
+        font-size: 15px;
+        color: #666;
+        line-height: 1.6;
+    }
 
-        .mobile-menu-btn.open span:nth-child(1) {
-            transform: rotate(-45deg) translate(-5px, 6px);
-        }
+    .view-more-btn {
+        margin-top: 15px;
+        display: inline-block;
+        text-decoration: none;
+        color: #4a6fdc;
+        font-weight: 600;
+        font-size: 14px;
+        padding-bottom: 2px;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s ease;
+    }
 
-        .mobile-menu-btn.open span:nth-child(2) {
+    .view-more-btn:hover {
+        border-color: #4a6fdc;
+    }
+
+    /* Modal Styles */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .modal.show {
+        display: block;
+        opacity: 1;
+    }
+
+    .modal-content {
+        background-color: #fff;
+        margin: 5% auto;
+        width: 90%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        animation: modalSlideIn 0.4s ease;
+    }
+
+    @keyframes modalSlideIn {
+        from {
+            transform: translateY(-50px);
             opacity: 0;
         }
-
-        .mobile-menu-btn.open span:nth-child(3) {
-            transform: rotate(45deg) translate(-5px, -6px);
-        }
-
-        /* Mobile Navigation */
-        .mobile-nav {
-            display: none;
-            position: fixed;
-            top: 80px;
-            left: 0;
-            width: 100%;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            z-index: 999;
-            transform: translateY(-100%);
-            transition: transform 0.3s ease;
-        }
-
-        .mobile-nav.open {
+        to {
             transform: translateY(0);
-        }
-        
-        .mobile-nav .cta-button {
-            display: block;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .mobile-menu-btn {
-                display: block;
-            }
-
-            .desktop-cta {
-                display: none;
-            }
-
-            .mobile-nav {
-                display: block;
-            }
-        }
-
-        /* Animation for page load */
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .header {
-            animation: fadeInDown 0.5s ease forwards;
-        }
-        
-                /* Base styling */
-        .video-container {
-            max-width: 800px;
-            margin: 5px auto;
-            position: relative;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-            border-radius: 24px;
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-        
-        .video-container:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Video thumbnail styling */
-        .video-thumbnail {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            border-radius: 24px 24px 0 0;
-        }
-
-        .video-thumbnail img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            object-fit: cover;
-            transition: all 0.5s ease;
-        }
-
-        /* Custom play button styling */
-        .play-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80px;
-            height: 80px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 2;
-            animation: pulseButton 2s infinite ease-in-out;
-        }
-
-        .play-button::before {
-            content: '';
-            width: 0;
-            height: 0;
-            border-top: 20px solid transparent;
-            border-bottom: 20px solid transparent;
-            border-left: 32px solid #ff0000;
-            margin-left: 8px;
-            transition: all 0.3s ease;
-        }
-        
-        /* Play button default animation */
-        @keyframes pulseButton {
-            0% {
-                box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
-                transform: translate(-50%, -50%) scale(1);
-            }
-            50% {
-                box-shadow: 0 0 0 15px rgba(255, 0, 0, 0);
-                transform: translate(-50%, -50%) scale(1.08);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
-                transform: translate(-50%, -50%) scale(1);
-            }
-        }
-
-        /* Hover effects */
-        .video-thumbnail:hover .play-button {
-            background-color: rgba(255, 255, 255, 0.95);
-            animation-play-state: paused;
-            transform: translate(-50%, -50%) scale(1.15);
-            box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
-        }
-
-        .video-thumbnail:hover img {
-            transform: scale(1.05);
-            filter: brightness(0.8);
-        }
-
-        /* YouTube iframe styling */
-        .youtube-iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: none;
-        }
-
-        /* Video title and description */
-        .video-info {
-            padding: 20px;
-            background: #fff;
-        }
-
-        .video-title {
-            font-size: 24px;
-            margin: 0 0 10px;
-            font-weight: 600;
-            color: #333;
-        }
-
-        .video-description {
-            font-size: 16px;
-            line-height: 1.5;
-            color: #666;
-            margin: 0;
-        }
-
-        /* Animation classes */
-        .fade-out {
-            opacity: 0;
-            transition: opacity 0.5s ease;
-            pointer-events: none;
-        }
-
-        .fade-in {
-            display: block !important;
-            opacity: 0;
-            animation: fadeIn 0.8s forwards;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-                /* About Section Styles */
-        .about {
-            background-color: var(--white);
-            padding: var(--spacing-xl) 0;
-            position: relative;
-        }
-        
-        .about::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                radial-gradient(circle at 10% 10%, var(--light) 0%, transparent 80%),
-                radial-gradient(circle at 90% 90%, var(--light) 0%, transparent 80%);
-            opacity: 0.6;
-            z-index: 0;
-        }
-        
-        .about-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .about-image {
-            flex: 0 0 45%;
-            padding: var(--spacing-md);
-        }
-        
-        .host-image-container {
-            position: relative;
-            padding-bottom: var(--spacing-md);
-        }
-        
-        .host-image {
-            width: 100%;
-            height: auto;
-            border-radius: var(--radius-md);
-            box-shadow: var(--shadow-md);
-            position: relative;
-            z-index: 2;
-        }
-        
-        .host-decoration {
-            position: absolute;
-            bottom: 0;
-            left: var(--spacing-md);
-            width: 80%;
-            height: 80%;
-            border: 3px solid var(--primary);
-            border-radius: var(--radius-md);
-            z-index: 1;
-        }
-        
-        .about-text {
-            flex: 0 0 50%;
-            padding: var(--spacing-md);
-        }
-        
-        .section-title {
-            font-family: var(--font-heading);
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: var(--spacing-xs);
-        }
-        
-        .title-underline {
-            width: 60px;
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
-            margin-bottom: var(--spacing-md);
-        }
-        
-        .about-description {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: var(--spacing-md);
-            color: var(--dark);
-        }
-        
-        .text-highlight {
-            color: var(--primary);
-            font-weight: 600;
-        }
-        
-        .host-info {
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: var(--radius-md);
-            padding: var(--spacing-md);
-            box-shadow: var(--shadow-sm);
-            border-left: 4px solid var(--secondary);
-        }
-        
-        .host-name {
-            font-family: var(--font-heading);
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--primary);
-            margin-bottom: var(--spacing-sm);
-        }
-        
-        .host-bio {
-            font-size: 1rem;
-            line-height: 1.7;
-            margin-bottom: var(--spacing-sm);
-            color: var(--dark);
-        }
-        
-        .host-quote {
-            font-style: italic;
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: var(--primary-dark);
-            padding: var(--spacing-sm) 0;
-            border-top: 1px solid rgba(67, 0, 105, 0.2);
-            margin-top: var(--spacing-sm);
-        }
-        
-        .quote-icon {
-            color: var(--secondary);
-            font-size: 0.9rem;
-            margin: 0 var(--spacing-xs);
-        }
-        
-        @media (max-width: 992px) {
-            .about-content {
-                flex-direction: column;
-            }
-            
-            .about-image, .about-text {
-                flex: 0 0 100%;
-                max-width: 600px;
-                margin: 0 auto;
-            }
-            
-            .about-image {
-                margin-bottom: var(--spacing-lg);
-            }
-        }
-        
-                /* Speakers Section Styles */
-        .speakers-section {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-            color: var(--primary);
-        }
-
-        .section-title h2 {
-            font-size: 36px;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-
-        .section-title p {
-            font-size: 18px;
-            color: var(--dark);
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .speakers-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-
-        .speakers-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .speaker-card {
-            background-color: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .speaker-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        .speaker-image {
-            height: 250px;
-            overflow: hidden;
-        }
-
-        .speaker-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .speaker-card:hover .speaker-image img {
-            transform: scale(1.05);
-        }
-
-        .speaker-info {
-            padding: 25px;
-        }
-
-        .speaker-name {
-            font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 5px;
-            color: var(--secondary-dark);
-        }
-
-        .talk-title {
-            font-size: 18px;
-            font-weight: 600;
-            color: var(--primary);
-            margin-bottom: 10px;
-        }
-
-        .talk-date {
-            display: inline-block;
-            font-size: 14px;
-            color: #fff;
-            background-color: var(--primary-dark);
-            padding: 5px 12px;
-            border-radius: 20px;
-            margin-bottom: 15px;
-        }
-
-        .talk-description {
-            font-size: 15px;
-            color: var(--dark);
-            line-height: 1.6;
-        }
-
-        .view-more-btn {
-            margin-top: 15px;
-            display: inline-block;
-            text-decoration: none;
-            color: var(--primary);
-            font-weight: 600;
-            font-size: 14px;
-            padding-bottom: 2px;
-            border-bottom: 2px solid transparent;
-            transition: border-color 0.3s ease;
-        }
-
-        .view-more-btn:hover {
-            border-color: #4a6fdc;
-        }
-
-        /* Modal Styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.7);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .modal.show {
-            display: block;
             opacity: 1;
         }
+    }
 
-        .modal-content {
-            background-color: #fff;
-            margin: 5% auto;
-            width: 90%;
-            max-width: 800px;
-            border-radius: 10px;
-            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-            animation: modalSlideIn 0.4s ease;
-        }
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 25px;
+        border-bottom: 1px solid #eee;
+    }
 
-        @keyframes modalSlideIn {
-            from {
-                transform: translateY(-50px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
+    .modal-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #333;
+    }
 
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 25px;
-            border-bottom: 1px solid #eee;
-        }
+    .close-modal {
+        font-size: 30px;
+        font-weight: bold;
+        color: #aaa;
+        cursor: pointer;
+        transition: color 0.2s ease;
+    }
 
-        .modal-title {
-            font-size: 24px;
-            font-weight: 700;
-            color: #333;
-        }
+    .close-modal:hover {
+        color: #333;
+    }
 
-        .close-modal {
-            font-size: 30px;
-            font-weight: bold;
-            color: #aaa;
-            cursor: pointer;
-            transition: color 0.2s ease;
-        }
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+    }
 
-        .close-modal:hover {
-            color: #333;
-        }
-
+    @media (min-width: 768px) {
         .modal-body {
-            display: flex;
-            flex-direction: column;
-            padding: 25px;
+            flex-direction: row;
+            gap: 25px;
         }
+    }
 
-        @media (min-width: 768px) {
-            .modal-body {
-                flex-direction: row;
-                gap: 25px;
-            }
-        }
+    .modal-image {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
+    @media (min-width: 768px) {
         .modal-image {
-            flex: 0 0 auto;
-            width: 100%;
-            margin-bottom: 20px;
+            width: 250px;
+            margin-bottom: 0;
         }
+    }
 
-        @media (min-width: 768px) {
-            .modal-image {
-                width: 250px;
-                margin-bottom: 0;
-            }
+    .modal-image img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .modal-info {
+        flex: 1;
+    }
+
+    .modal-speaker-name {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .modal-talk-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #4a6fdc;
+        margin-bottom: 10px;
+    }
+
+    .modal-talk-date {
+        display: inline-block;
+        font-size: 14px;
+        color: #fff;
+        background-color: #4a6fdc;
+        padding: 5px 12px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .modal-talk-description {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.7;
+    }
+
+    .modal-footer {
+        padding: 15px 25px;
+        border-top: 1px solid #eee;
+        text-align: right;
+    }
+
+    .register-btn {
+        display: inline-block;
+        background-color: #4a6fdc;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 25px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .register-btn:hover {
+        background-color: #3658ba;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 991px) {
+        .speakers-grid {
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
         }
+    }
 
-        .modal-image img {
-            width: 100%;
-            border-radius: 5px;
+    @media (max-width: 767px) {
+        .section-title h2 {
+            font-size: 30px;
         }
-
-        .modal-info {
-            flex: 1;
-        }
-
-        .modal-speaker-name {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: var(--secondary);
-        }
-
-        .modal-talk-title {
-            font-size: 20px;
-            font-weight: 600;
-            color: var(--primary);
-            margin-bottom: 10px;
-        }
-
-        .modal-talk-date {
-            display: inline-block;
-            font-size: 14px;
-            color: #fff;
-            background-color: var(--primary);
-            padding: 5px 12px;
-            border-radius: 20px;
-            margin-bottom: 20px;
-        }
-
-        .modal-talk-description {
+        
+        .section-title p {
             font-size: 16px;
-            color: var(--dark);
-            line-height: 1.7;
         }
+        
+        .speakers-grid {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .speaker-image {
+            height: 220px;
+        }
+        
+        .speaker-info {
+            padding: 20px;
+        }
+    }
 
-        .modal-footer {
-            padding: 15px 25px;
-            border-top: 1px solid #eee;
-            text-align: right;
+    @media (max-width: 480px) {
+        .speakers-grid {
+            grid-template-columns: 1fr;
         }
-
-        .register-btn {
-            display: inline-block;
-            background-color: var(--primary);
-            color: #fff;
-            font-size: 16px;
-            font-weight: 600;
-            padding: 10px 25px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+        
+        .modal-content {
+            margin: 10% auto;
+            width: 95%;
         }
-
-        .register-btn:hover {
-            background-color: #3658ba;
-        }
-
-        /* Responsive Adjustments */
-        @media (max-width: 991px) {
-            .speakers-grid {
-                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-                gap: 25px;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .section-title h2 {
-                font-size: 30px;
-            }
-            
-            .section-title p {
-                font-size: 16px;
-            }
-            
-            .speakers-grid {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                gap: 20px;
-            }
-            
-            .speaker-image {
-                height: 220px;
-            }
-            
-            .speaker-info {
-                padding: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .speakers-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .modal-content {
-                margin: 10% auto;
-                width: 95%;
-            }
-        }
-    </style>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
+    }
+</style>
 <body>
-  
+
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="headline">Take The Quantum Leap For Your Business & Career With <span>"ORGANIZE MY LIFE CONFERENCE"</span></h1>
-                <h2 class="subheading">Repositioning for a Life That Works</h2>
-                <h3 class="sub-subheading">7 Days, 7 Speakers, 1 Life-altering Experience</h3>
-                
-                <div class="countdown">
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="days">00</span>
-                        <span class="countdown-label">Days</span>
+
+        <div class="hero-content">
+            <h1>Take The Quantum Leap For Your Business & Career With <span>"Organize My Life Conference"</span></h1>
+            <h2>Repositioning for a Life That Works</h2>
+            <p>7 Days <i class="fas fa-circle" style="font-size: 1rem; margin: 0 0.5rem;"></i> 7 Speakers <i class="fas fa-circle" style="font-size: 1rem; margin: 0 0.5rem;"></i> 1 Life-Altering Experience</p>
+            
+            <div class="countdown">
+                <h3>Conference Starts In:</h3>
+                <div class="countdown-container">
+                    <div class="countdown-box">
+                        <span id="days">00</span>
+                        <span>Days</span>
                     </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="hours">00</span>
-                        <span class="countdown-label">Hours</span>
+                    <div class="countdown-box">
+                        <span id="hours">00</span>
+                        <span>Hours</span>
                     </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="minutes">00</span>
-                        <span class="countdown-label">Minutes</span>
+                    <div class="countdown-box">
+                        <span id="minutes">00</span>
+                        <span>Minutes</span>
                     </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="seconds">00</span>
-                        <span class="countdown-label">Seconds</span>
+                    <div class="countdown-box">
+                        <span id="seconds">00</span>
+                        <span>Seconds</span>
                     </div>
                 </div>
-                
-                <a href="#register" class="cta-button">REGISTER NOW</a>
             </div>
-        </div>
-    </section>
-    
-        <!-- About Section -->
-    <section class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="host-image-container">
-                        <img src="images/Ketura_2.png" alt="Conference Host" class="host-image">
-                        <div class="host-decoration"></div>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <h2 class="section-title">Whats in it?</h2>
-                    <div class="title-underline"></div>
-                    <p class="about-description">
-                        The <span class="text-highlight">Organize My Life Conference</span> is a 7-day immersive experience designed to help high-achieving professionals reposition and reorder their lives and walk boldly into the next version of themselves across key areas—emotional, mental, personal, career, business, and lifestyle.
-                    </p>
-                    <p class="about-description">
-                        This is not just another self-help event—it’s a realignment room. A sacred space. A recalibration zone. And unlike traditional lecture-style conferences,OMLC is rooted in real, raw, and relatable dialogues.
-                    </p>
-                    
-                    <p class="about-description">
-                      At OML, we don’t lecture. We converse from the heart. We don’t teach from a podium—we share from lived pages. Because we believe that through the life pages of others, you’ll find clarity for your own.
-                    </p>
-                    
-                            <div class="video-container">
-                  <div class="video-thumbnail" id="video-thumbnail">
-            <!-- Replace with your thumbnail image URL or use YouTube's auto-generated thumbnail -->
-            <img src="https://img.youtube.com/vi/Q5_1HpVpxl8/maxresdefault.jpg" alt="Video Thumbnail">
-            <div class="play-button" id="play-button"></div>
-            <iframe 
-                class="youtube-iframe" 
-                id="youtube-player"
-                src="" 
-                allowfullscreen 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            ></iframe>
-        </div>
-                    
-                    <div class="host-info">
-                        <h3 class="host-name">Meet Your Host: Ketura Adams</h3>
-                        <p class="host-bio">
-                            Ketura Adams is a renowned organizational psychologist, bestselling author, and leadership coach with over 7 years of experience helping high-performers optimize their potential.
-                        </p>
-                        <p class="host-bio">
-                            After transforming her own life from burnout to balanced success, she has dedicated her career to helping others find their own quantum leap moments. Her unique methodology combines cutting-edge psychology, practical productivity systems, and holistic wellbeing practices.
-                        </p>
-                        <p class="host-quote">
-                            <i class="quote-icon fas fa-quote-left"></i>
-                            This conference isn't just about organizing your calendar—it's about reorganizing your life for exponential growth and fulfillment.
-                            <i class="quote-icon fas fa-quote-right"></i>
-                        </p>
-                    </div>
-                    
-                </div>
+            <div class="cta-buttons">
+                <a href="#register" class="primary-btn">REGISTER NOW</a>
             </div>
         </div>
     </section>
 
-    
-    <section class="speakers-section section">
-              <div class="speakers-container">
-            <div class="section-title">
-                <h2>Our Speakers</h2>
-                <p>Learn from industry experts who have mastered the art of personal development and will share their knowledge with you.</p>
+    <!-- About Section -->
+    <section class="section" id="about">
+
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/CEO.png" alt="People at conference">
             </div>
-            
+
+            <div class="section-title">
+                <p>The OML Conference is a 7-day immersive experience designed to help high-achieving professionals reposition and reorder their lives and walk boldly into the next version of themselves across key areas—emotional, mental, personal, career, business, and lifestyle—</p>
+                <p>This is not just another self-help event—it's a realignment room. A sacred space. A recalibration zone. And unlike traditional lecture-style conferences, OMLC is rooted in real, raw, and relatable dialogues.</p>
+                <p>At OML, we don’t lecture. We converse from the heart. We don’t teach from a podium—we share from lived pages. Because we believe that through the life pages of others, you’ll find clarity for your own.
+                
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section class="speakers-section">
+        <div class="section-title">
+            <h2>Our Speakers</h2>
+            <p>Learn from industry experts who have mastered the art of personal development and will share their knowledge with you.</p>
+        </div>
+        <div class="speakers-container">
             <div class="speakers-grid" id="speakersGrid">
                 <!-- Speakers will be loaded here via JavaScript -->
             </div>
+        
         </div>
-    </section>
-        <!-- Speaker Modal -->
+
+
+    <!-- Speaker Modal -->
     <div class="modal" id="speakerModal">
         <div class="modal-content">
             <div class="modal-header">
@@ -1192,41 +417,408 @@
         </div>
     </div>
 
-    <script>
-        // Set the date we're counting down to (30 days from now)
-        const countDownDate = new Date();
-        countDownDate.setDate(countDownDate.getDate() + 30);
+        </div>
+    </section>
 
-        // Update the countdown every 1 second
-        const countdownTimer = setInterval(function() {
-            // Get current date and time
-            const now = new Date().getTime();
+    <!-- Features Section -->
+    <section class="section features">
+        <div class="section-title">
+            <h2>What You'll Experience</h2>
+            <p>This conference is packed with valuable features to ensure maximum transformation</p>
+        </div>
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <h3>Firechat Sessions</h3>
+                <p>Interactive, heart-to-heart conversations with speakers instead of traditional lectures for deeper engagement.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Networking Rooms</h3>
+                <p>Connect with like-minded professionals in virtual networking rooms after each session.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>Post-event Resources</h3>
+                <p>Participants will receive exclusive tools, workbooks, and additional resources to help them implement what they’ve learned.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+                <h3>Action Plan</h3>
+                <p>Get a personalized action plan template post-event to maintain your transformation momentum.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-reply"></i>
+                </div>
+                <h3>Replay Access</h3>
+                <p>Attendees will have access to the replay of each session to revisit key takeaways and continue their personal growth journey.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Live Sessions</h3>
+                <p>Each day will feature a live session where speakers engage directly with participants, offering interactive discussions and Q&A opportunities.</p>
+            </div>
+    </section>
+
+
+    <!-- Schedule Section -->
+    <section class="section schedule" id="schedule">
+        <div class="section-title">
+            <h2>Conference Schedule</h2>
+            <p>7 days of transformation across key life areas</p>
+        </div>
+        <div class="schedule-container">
+            <!-- Day 1 -->
+            <div class="schedule-day">
+                <div class="day-header" onclick="toggleDay(1)">
+                    <h3>Day 1: Emotional Health</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="day-content" id="day1">
+                    <div class="session">
+                        <h4>Firechat: Healing Past Wounds</h4>
+                        <p class="time">5:30 PM CST / 6:30 PM EST</p>
+                        <p>Explore emotional regulation techniques and pathways to emotional maturity with Dr. Julia.</p>
+                    </div>
+                </div>
+            </div>
             
-            // Find the distance between now and the countdown date
-            const distance = countDownDate - now;
+            <!-- Day 2 -->
+            <div class="schedule-day">
+                <div class="day-header" onclick="toggleDay(2)">
+                    <h3>Day 2: Mindset Mastery</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="day-content" id="day2">
+                    <div class="session">
+                        <h4>Firechat: Breaking Mental Limitations</h4>
+                        <p class="time">5:30 PM CST / 6:30 PM EST</p>
+                        <p>Debra Jane guides you through adopting new belief systems and unlocking your inner power.</p>
+                    </div>
+                </div>
+            </div>
             
-            // Time calculations for days, hours, minutes and seconds
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            <!-- Day 3 -->
+            <div class="schedule-day">
+                <div class="day-header" onclick="toggleDay(3)">
+                    <h3>Day 3: Personal Transformation</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="day-content" id="day3">
+                    <div class="session">
+                        <h4>Becoming Who You're Meant to Be</h4>
+                        <p class="time">5:30 PM CST / 6:30 PM EST</p>
+                        <p>Coach Emily Wale-Koya shares powerful strategies for shedding your old self and telling a new story.</p>
+                    </div>
+                </div>
+            </div>
             
-            // Display the result
-            document.getElementById("days").innerText = days.toString().padStart(2, '0');
-            document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
-            document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
-            document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+            <!-- Day 4 -->
+            <div class="schedule-day">
+                <div class="day-header" onclick="toggleDay(4)">
+                    <h3>Day 4: Career Design</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="day-content" id="day4">
+                    <div class="session">
+                        <h4>Firechat: Designing Your Ideal Career</h4>
+                        <p class="time">5:30 PM CST / 6:30 PM EST</p>
+                        <p>Dr. Janet Antwi reveals how to create a career that aligns with your values and aspirations.</p>
+                    </div>
+                </div>
+            </div>
             
-            // If the countdown is finished, display text
-            if (distance < 0) {
-                clearInterval(countdownTimer);
-                document.getElementById("days").innerText = "00";
-                document.getElementById("hours").innerText = "00";
-                document.getElementById("minutes").innerText = "00";
-                document.getElementById("seconds").innerText = "00";
-            }
-        }, 1000);
+            <!-- Day 5 -->
+            <div class="schedule-day">
+                <div class="day-header" onclick="toggleDay(5)">
+                    <h3>Day 5: Networking</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="day-content" id="day5">
+                    <div class="session">
+                        <h4>Firechat: Building Meaningful Connections</h4>
+                        <p class="time">5:30 PM CST / 6:30 PM EST</p>
+                        <p>Ms. Samira Munkaila shares proven strategies for authentic professional networking.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Day 6 -->
+            <div class="schedule-day">
+                <div class="day-header" onclick="toggleDay(6)">
+                    <h3>Day 6: Productivity & Systems</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="day-content" id="day6">
+                    <div class="session">
+                        <h4>From Chaos to Clarity</h4>
+                        <p class="time">5:30 PM CST / 6:30 PM EST</p>
+                        <p>Learn systems for managing time, priorities, and energy from our productivity expert.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Day 7 -->
+            <div class="schedule-day">
+                <div class="day-header" onclick="toggleDay(7)">
+                    <h3>Day 7: Purpose & Alignment</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="day-content" id="day7">
+                    <div class="session">
+                        <h4>Pulling It All Together</h4>
+                        <p class="time">5:30 PM CST / 6:30 PM EST</p>
+                        <p>Keturah Adams helps you find clarity, understand your calling, and plan what's next.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section" id="pricing">
+        <div class="section-title">
+            <h2>Choose Your Package</h2>
+            <p>Select the option that best fits your transformation journey</p>
+        </div>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>Early Bird</h3>
+                <div class="price">$97 <span>Limited Time</span></div>
+                <ul class="pricing-features">
+                    <li>Access to all 7 live sessions</li>
+                    <li>Session replays for 30 days</li>
+                    <li>Conference workbook</li>
+                    <li>Networking opportunities</li>
+                    <li>Post-event action plan</li>
+                </ul>
+                <a href="#register" class="primary-btn">Register Now</a>
+            </div>
+            
+            <div class="pricing-card popular">
+                <div class="popular-tag">Most Popular</div>
+                <h3>Standard</h3>
+                <div class="price">$147 <span>Full Access</span></div>
+                <ul class="pricing-features">
+                    <li>Everything in Early Bird</li>
+                    <li>Session replays for 90 days</li>
+                    <li>Bonus workshop materials</li>
+                    <li>Extended Q&A sessions</li>
+                    <li>Priority support</li>
+                </ul>
+                <a href="#register" class="primary-btn">Register Now</a>
+            </div>
+            
+            <div class="pricing-card">
+                <h3>VIP Experience</h3>
+                <div class="price">$297 <span>Exclusive</span></div>
+                <ul class="pricing-features">
+                    <li>Everything in Standard</li>
+                    <li>1-on-1 coaching session</li>
+                    <li>Signed copy of Dr. Keturah's book</li>
+                    <li>Private mastermind group</li>
+                    <li>Lifetime replay access</li>
+                </ul>
+                <a href="#register" class="primary-btn">Register Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="section-title">
+            <h2>What People Are Saying</h2>
+            <p>Hear from past attendees about their transformation experiences</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "The OML Conference completely shifted how I approach my life. The firechat format made it so personal and impactful. I've implemented changes that have improved every area of my life."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah J.">
+                    </div>
+                    <div class="author-info">
+                        <h4>Sarah J.</h4>
+                        <p>Marketing Director</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "I was skeptical at first, but the emotional health day alone was worth the investment. Dr. Julia's approach helped me break through barriers I'd been struggling with for years."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael T.">
+                    </div>
+                    <div class="author-info">
+                        <h4>Michael T.</h4>
+                        <p>Software Engineer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "The networking strategies I learned on Day 5 helped me land two new clients within a week! The entire conference was packed with practical, actionable wisdom."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Aisha K.">
+                    </div>
+                    <div class="author-info">
+                        <h4>Aisha K.</h4>
+                        <p>Business Owner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+        <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know about the OML Conference</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(1)">
+                    <span>What's the format of the conference?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer" id="faq1">
+                    <p>The OML Conference features 7 daily sessions (Sunday to Saturday) held live via Zoom at 5:30 PM CST / 6:30 PM EST. Each 90-minute session includes a main presentation or firechat (interactive discussion), Q&A time, and optional networking. Sessions will also be recorded for replay access.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(2)">
+                    <span>What if I can't attend all sessions live?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer" id="faq2">
+                    <p>No problem! All registered attendees will receive access to session replays. Early Bird tickets include 30-day access, Standard tickets include 90-day access, and VIP tickets include lifetime access to replays.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(3)">
+                    <span>What's the difference between a firechat and regular session?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer" id="faq3">
+                    <p>Firechats are more interactive, conversational sessions where the speaker engages directly with participants in a dialogue format rather than a traditional lecture. Regular sessions are more presentation-style but still include Q&A opportunities.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(4)">
+                    <span>Is there a money-back guarantee?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer" id="faq4">
+                    <p>Yes! We offer a 100% satisfaction guarantee. If you attend the first two sessions and don't find value in the conference, we'll refund your registration fee no questions asked.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(5)">
+                    <span>What technology do I need to participate?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer" id="faq5">
+                    <p>You'll need a computer, tablet, or smartphone with internet access. We recommend using Zoom for the best interactive experience, but sessions will also be streamed on Facebook for viewing. All replays will be available on YouTube.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(6)">
+                    <span>How do the VIP one-on-one coaching sessions work?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer" id="faq6">
+                    <p>VIP attendees will receive scheduling instructions after registration to book their 45-minute private coaching session with one of our speakers. These sessions typically occur within 30 days after the conference.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="register">
+        <h2>Ready to Organize Your Life?</h2>
+        <p>Join us for this transformative 7-day experience and reposition yourself for a life that truly works.</p>
+        <div class="cta-buttons">
+            <a href="[YOUR_REGISTRATION_LINK]" class="primary-btn">Register Now</a>
+            <a href="#pricing" class="secondary-btn">See Pricing</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">OML<span>Conference</span></div>
+                <p>Helping high-achieving professionals reposition and reorder their lives across all key areas - emotional, mental, personal, career, business, and lifestyle.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#speakers">Speakers</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#register">Register</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@omlconference.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>(555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Virtual Event - Join From Anywhere</span>
+                </div>
+            </div>
+        </div>
         
+        <div class="footer-bottom">
+            <p>&copy; 2023 Organize My Life Conference. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+
+
+    <script>
         // Speakers Data
         const speakers = [
             {
@@ -1234,37 +826,37 @@
                 name: "Dr. Julia",
                 image: "images/CEO.png", // Replace with actual image path
                 talkTitle: "Emotional Health (Firechat)",
-                date: "June 1, 2025 | 10:00 AM",
-                description: "Healing past wounds, emotional regulation and emotional maturity."
+                date: "June 15, 2025 | 10:00 AM",
+                description: "Healing past wounds, emotional regulation, and emotional maturity."
             },
             {
                 id: 2,
                 name: "Debra Jane",
-                image: "images/Ketura_2.png", // Replace with actual image path
+                image: "images/Laurina.jpeg", // Replace with actual image path
                 talkTitle: "Mindset Mastery (Firechat)",
                 date: "June 15, 2025 | 2:00 PM",
-                description: "Breaking mental limitations, adopting new belief systems, unlocking inner power"
+                description: "Breaking mental limitations, adopting new belief systems, unlocking inner power."
             },
             {
                 id: 3,
                 name: "Coach Emily Wale-Koya",
-                image: "images/Laurina.jpeg", // Replace with actual image path
+                image: "images/Rhema.jpeg", // Replace with actual image path
                 talkTitle: "Personal Transformation (Speaker)",
                 date: "June 16, 2025 | 9:30 AM",
-                description: "Shedding the old self, telling a new story, becoming  who you are meant to be."
+                description: "Shedding the old self, telling a new story, becoming who you’re meant to be."
             },
             {
                 id: 4,
                 name: "Dr. Janet Antwi",
-                image: "images/Abas.jpeg", // Replace with actual image path
+                image: "images/Ketura.png", // Replace with actual image path
                 talkTitle: "Career Design (Firechat)",
                 date: "June 16, 2025 | 1:00 PM",
                 description: "Transform your life through strategic habit building. David will break down the science of habit formation and provide a step-by-step system for implementing positive changes that stick."
             },
             {
                 id: 5,
-                name: "Ms. Samira Munkaila",
-                image: "images/Rhema.jpeg", // Replace with actual image path
+                name: "Aisha Patel",
+                image: "images/DrK.jpg", // Replace with actual image path
                 talkTitle: "Networking (Firechat)",
                 date: "June 17, 2025 | 10:00 AM",
                 description: "Discover how emotional intelligence can elevate your leadership capabilities. Aisha explores the connection between self-awareness, empathy, and effective leadership in both personal and professional contexts."
@@ -1272,18 +864,18 @@
             {
                 id: 6,
                 name: "TBA: Guy Speaker",
-                image: "images/doc.jpg", // Replace with actual image path
-                talkTitle: "Productivity & Systems (Speaking)",
+                image: "images/Abas.jpeg", // Replace with actual image path
+                talkTitle: "Productivity & Systems",
                 date: "June 17, 2025 | 2:30 PM",
-                description: "Systems for managing time, priorities, and energy — from chaos to clarity"
+                description: "Systems for managing time, priorities, and energy — from chaos to clarity."
             },
             {
                 id: 7,
                 name: "Ketura Adams",
-                image: "images/Ketura_2.png", // Replace with actual image path
+                image: "images/SW.jpeg", // Replace with actual image path
                 talkTitle: "Purpose & Alignment (Wrap up)",
                 date: "June 18, 2025 | 11:00 AM",
-                description: "Pulling everything together: clarity, calling, and what’s next"
+                description: "Pulling everything together: clarity, calling, and what’s next."
             }
         ];
 
@@ -1361,7 +953,7 @@
 
         // Initialize speakers grid
         document.addEventListener('DOMContentLoaded', renderSpeakers);
-        
     </script>
+
 </body>
 </html>
