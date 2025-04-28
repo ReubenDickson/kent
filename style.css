@@ -20,6 +20,7 @@ body {
     color: var(--dark);
     line-height: 1.6;
     overflow-x: hidden;
+    font-family: 'Playfair Display', serif;
 }
 
 /* Header Styles */
@@ -31,6 +32,7 @@ header {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-family: 'Playfair Display', serif;
 }
 
 .header-container {
@@ -86,6 +88,7 @@ header {
     border-radius: 30px;
     font-weight: 600;
     transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
 }
 
 .register-btn:hover {
@@ -118,11 +121,14 @@ header {
     margin: 0 auto;
     padding: 150px 2rem 0; /* Added top padding to create space from the menu bar */
 }
+
 .hero h1 {
+    font-family: 'Playfair Display', serif;
     font-size: 4.5rem;
     margin-bottom: 1rem;
     line-height: 1.2;
     animation: fadeInUp 1s ease;
+    font-family: 'Playfair Display', serif;
 }
 
 .hero h1 span {
@@ -131,10 +137,12 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     font-style: italic;
+    font-family: 'Playfair Display', serif;
 }
 
 .hero h2 {
     font-size: 3rem;
+    font-family: 'Playfair Display', serif;
     margin-bottom: 2.5rem;
     font-weight: 300;
     color: var(--secondary);
@@ -159,6 +167,9 @@ header {
     gap: 1.5rem;
     animation: fadeInUp 1s ease 0.9s forwards;
     opacity: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .primary-btn, .secondary-btn {
@@ -1000,7 +1011,7 @@ footer {
         .talk-title {
             font-size: 18px;
             font-weight: 600;
-            color: #4a6fdc;
+            color: var(--primary);
             margin-bottom: 10px;
         }
 
@@ -1008,7 +1019,7 @@ footer {
             display: inline-block;
             font-size: 14px;
             color: #fff;
-            background-color: #4a6fdc;
+            background-color: var(--primary);
             padding: 5px 12px;
             border-radius: 20px;
             margin-bottom: 15px;
@@ -1016,7 +1027,7 @@ footer {
 
         .talk-description {
             font-size: 15px;
-            color: #666;
+            color: var(--dark);
             line-height: 1.6;
         }
 
@@ -1024,7 +1035,7 @@ footer {
             margin-top: 15px;
             display: inline-block;
             text-decoration: none;
-            color: #4a6fdc;
+            color: var(--primary);
             font-weight: 600;
             font-size: 14px;
             padding-bottom: 2px;
@@ -1143,13 +1154,13 @@ footer {
             font-size: 24px;
             font-weight: 700;
             margin-bottom: 10px;
-            color: #333;
+            color: #e71c1c;
         }
 
         .modal-talk-title {
             font-size: 20px;
             font-weight: 600;
-            color: #4a6fdc;
+            color: var(--primary);
             margin-bottom: 10px;
         }
 
@@ -1157,7 +1168,7 @@ footer {
             display: inline-block;
             font-size: 14px;
             color: #fff;
-            background-color: #4a6fdc;
+            background-color: var(--primary);
             padding: 5px 12px;
             border-radius: 20px;
             margin-bottom: 20px;
@@ -1231,4 +1242,148 @@ footer {
                 margin: 10% auto;
                 width: 95%;
             }
+        }
+
+
+
+        /* Base styling */
+        .video-container {
+            max-width: 800px;
+            margin: 40px auto;
+            position: relative;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            border-radius: 24px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .video-container:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Video thumbnail styling */
+        .video-thumbnail {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            border-radius: 24px 24px 0 0;
+        }
+
+        .video-thumbnail img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+
+        /* Custom play button styling */
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            animation: pulseButton 2s infinite ease-in-out;
+        }
+
+        .play-button::before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 32px solid #ff0000;
+            margin-left: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        /* Play button default animation */
+        @keyframes pulseButton {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
+                transform: translate(-50%, -50%) scale(1);
+            }
+            50% {
+                box-shadow: 0 0 0 15px rgba(255, 0, 0, 0);
+                transform: translate(-50%, -50%) scale(1.08);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        /* Hover effects */
+        .video-thumbnail:hover .play-button {
+            background-color: rgba(255, 255, 255, 0.95);
+            animation-play-state: paused;
+            transform: translate(-50%, -50%) scale(1.15);
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+        }
+
+        .video-thumbnail:hover img {
+            transform: scale(1.05);
+            filter: brightness(0.8);
+        }
+
+        /* YouTube iframe styling */
+        .youtube-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: none;
+        }
+
+        /* Video title and description */
+        .video-info {
+            padding: 20px;
+            background: #fff;
+        }
+
+        .video-title {
+            font-size: 24px;
+            margin: 0 0 10px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .video-description {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+            margin: 0;
+        }
+
+        /* Animation classes */
+        .fade-out {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+        }
+
+        .fade-in {
+            display: block !important;
+            opacity: 0;
+            animation: fadeIn 0.8s forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }

@@ -10,10 +10,20 @@
 </head>
 <style>
     /* Speakers Section Styles */
+
+    :root {
+    --primary: #430069;
+    --secondary: #ff9696;
+    --accent: #B9E0FF;
+    --dark: #1f1a1a;
+    --light: #F5F5F5;
+    --success: #109114;
+    --warning: #FF9800;
+}
     .speakers-section {
         padding: 80px 0;
         background-color: #f8f9fa;
-        font-family: 'Arial', sans-serif;
+        font-family: 'Playfair Display', serif;
     }
 
     .section-title {
@@ -90,15 +100,16 @@
     .talk-title {
         font-size: 18px;
         font-weight: 600;
-        color: #4a6fdc;
+        color: var(--primary);
         margin-bottom: 10px;
+        font-family: 'Playfair Display', serif;
     }
 
     .talk-date {
         display: inline-block;
         font-size: 14px;
-        color: #fff;
-        background-color: #4a6fdc;
+        color: var(--light);
+        background-color: var(--primary);
         padding: 5px 12px;
         border-radius: 20px;
         margin-bottom: 15px;
@@ -106,7 +117,7 @@
 
     .talk-description {
         font-size: 15px;
-        color: #666;
+        color: var(--success);
         line-height: 1.6;
     }
 
@@ -114,7 +125,7 @@
         margin-top: 15px;
         display: inline-block;
         text-decoration: none;
-        color: #4a6fdc;
+        color: var(--primary);
         font-weight: 600;
         font-size: 14px;
         padding-bottom: 2px;
@@ -179,7 +190,7 @@
     .modal-title {
         font-size: 24px;
         font-weight: 700;
-        color: #333;
+        color: var(--primary);
     }
 
     .close-modal {
@@ -239,7 +250,7 @@
     .modal-talk-title {
         font-size: 20px;
         font-weight: 600;
-        color: #4a6fdc;
+        color: fff;
         margin-bottom: 10px;
     }
 
@@ -247,7 +258,7 @@
         display: inline-block;
         font-size: 14px;
         color: #fff;
-        background-color: #4a6fdc;
+        background-color: var(--primary);
         padding: 5px 12px;
         border-radius: 20px;
         margin-bottom: 20px;
@@ -267,7 +278,7 @@
 
     .register-btn {
         display: inline-block;
-        background-color: #4a6fdc;
+        background-color: var(--primary);
         color: #fff;
         font-size: 16px;
         font-weight: 600;
@@ -360,6 +371,7 @@
         </div>
     </section>
 
+
     <!-- About Section -->
     <section class="section" id="about">
 
@@ -378,6 +390,8 @@
 
         </div>
     </section>
+
+
 
     <!-- Speakers Section -->
     <section class="speakers-section">
@@ -812,7 +826,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2023 Organize My Life Conference. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <p>&copy; 2025 Organize My Life Conference. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </div>
     </footer>
 
