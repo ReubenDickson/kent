@@ -1,7 +1,7 @@
 // Countdown Timer
 document.addEventListener('DOMContentLoaded', function () {
 function updateCountdown() {
-    const conferenceDate = new Date('July 12, 2025 17:00:00').getTime();
+    const conferenceDate = new Date('July 12, 2025 17:30:00').getTime();
     const now = new Date().getTime();
     const distance = conferenceDate - now;
 
