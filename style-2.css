@@ -1,0 +1,152 @@
+        /* Global Styles */
+        :root {
+            --primary: #430069;
+            --secondary: #ff9696;
+            --accent: #B9E0FF;
+            --dark: #1f1a1a;
+            --light: #F5F5F5;
+            --success: #109114;
+            --warning: #FF9800;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(108, 65, 242, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(108, 65, 242, 0.4);
+        }
+        
+        /* Hero Section */
+        .hero {
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.9) 0%, rgba(26, 26, 46, 0.7) 100%), url('https://images.pexels.com/photos/3825568/pexels-photo-3825568.jpeg?auto=compress&cs=tinysrgb&w=1600') repeat-x center/cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--accent);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            background: linear-gradient(to right, #fff, var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .hero-description {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .countdown-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .countdown-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        .countdown-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .video-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .video-btn i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-description {
+                font-size: 1.1rem;
+            }
+            
+            .countdown {
+                flex-wrap: wrap;
+            }
+            
+            .btn {
+                padding: 12px 25px;
+            }
+        }
