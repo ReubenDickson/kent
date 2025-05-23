@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 body {
@@ -103,62 +103,6 @@ header {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
-}
-
-/* Hero Section */
-.hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: dark;
-    padding-top: 35px 2rem 0;
-    width: 100%;
-}
-
-.hero-content {
-    width: 100%;
-    margin: 0 auto;
-    padding: 150px 2rem 0; /* Added top padding to create space from the menu bar */
-}
-
-.hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 4.5rem;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-    animation: fadeInUp 1s ease;
-    font-family: 'Playfair Display', serif;
-}
-
-.hero h1 span {
-    display: inline-block;
-    color: var(--primary);
-    font-weight: 700;
-    text-transform: uppercase;
-    font-style: italic;
-    font-family: 'Playfair Display', serif;
-}
-
-.hero h2 {
-    font-size: 3rem;
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 2.5rem;
-    font-weight: 300;
-    color: var(--secondary);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    letter-spacing: 1px;
-    animation: fadeInUp 1s ease 0.3s forwards;
-    opacity: 0;
-    padding: 10px 0.5rem 10px; /* Adjusted padding to reduce space */
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2.5rem;
-    animation: fadeInUp 1s ease 0.6s forwards;
-    opacity: 0;
-    padding: 5px 0.5rem 10px;
 }
 
 .cta-buttons {
@@ -736,6 +680,7 @@ header {
     color: white;
     text-align: center;
     padding: 6rem 2rem;
+    margin-bottom: 6rem; /* Increased margin to prevent overlap */
 }
 
 .cta h2 {
