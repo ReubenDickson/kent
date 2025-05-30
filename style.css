@@ -12,7 +12,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
 }
 
         /* Global Styles */
@@ -22,7 +25,11 @@
             color: var(--dark);
             line-height: 1.6;
             overflow-x: hidden;
-            font-family: 'Playfair Display', serif;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: auto;
+            font-style: normal;
+            
         }
         
         .container {
@@ -54,7 +61,7 @@
         
         /* Hero Section */
         .hero {
-            font-family: 'Playfair Display', serif;
+            font-family: "Montserrat", sans-serif;
             background: linear-gradient(135deg, rgba(26, 26, 46, 0.9) 0%, rgba(26, 26, 46, 0.7) 100%), url('https://images.pexels.com/photos/3825568/pexels-photo-3825568.jpeg?auto=compress&cs=tinysrgb&w=1600') repeat-x center/cover;
             color: white;
             padding: 100px 0;
@@ -68,7 +75,7 @@
         }
         
         .hero-subtitle {
-            font-family: 'Playfair Display', serif;
+            font-family: "Montserrat", sans-serif;
             font-size: 1.2rem;
             text-transform: uppercase;
             letter-spacing: 3px;
@@ -78,7 +85,7 @@
         }
         
         .hero-title {
-            font-family: 'Playfair Display', serif;
+            font-family: "Montserrat", sans-serif;
             font-size: 3.5rem;
             font-weight: 800;
             margin-bottom: 20px;
@@ -90,7 +97,7 @@
         }
         
         .hero-description {
-            font-family: 'Playfair Display', serif;
+            font-family: "Montserrat", sans-serif;
             font-size: 1.3rem;
             margin-bottom: 40px;
             opacity: 0.9;
@@ -163,7 +170,7 @@ header {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    font-family: 'Playfair Display', serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .header-container {
@@ -219,7 +226,7 @@ header {
     border-radius: 30px;
     font-weight: 600;
     transition: all 0.3s ease;
-    font-family: 'Playfair Display', serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .register-btn:hover {
@@ -673,7 +680,7 @@ header {
 
 .pricing-features li::before {
     content: '\f00c';
-    font-family: 'Font Awesome 6 Free';
+    font-family: "Montserrat", sans-serif;
     font-weight: 900;
     color: var(--success);
     position: absolute;
