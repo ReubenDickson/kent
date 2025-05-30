@@ -142,7 +142,7 @@
         .countdown-number {
             font-size: 2rem;
             font-weight: 700;
-            color: var(--dark);
+            color: var(--light);
         }
         
         .countdown-label {
