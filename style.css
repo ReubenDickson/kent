@@ -15,14 +15,6 @@
     font-family: 'Playfair Display', serif;
 }
 
-body {
-    background: linear-gradient(120deg, var(--light), var(--light) 70%, var(--secondary));
-    color: var(--dark);
-    line-height: 1.6;
-    overflow-x: hidden;
-    font-family: 'Playfair Display', serif;
-}
-
 /* Header Styles */
 header {
     background: linear-gradient(120deg, var(--primary), var(--primary) 70%, var(--secondary));
