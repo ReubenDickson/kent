@@ -105,15 +105,16 @@
         }
         
         .hero-title {
-            font-family: "Montserrat", sans-serif;
-            color: var(--dark)
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            line-height: 1.2;
-            -webkit-background-clip: text;
-            background-clip: text;
+        font-family: "Montserrat", sans-serif;
+        color: var(--dark);
+        font-size: 4rem;
+        font-weight: 900;
+        margin-bottom: 20px;
+        line-height: 1.1;
+        -webkit-background-clip: text;
+        background-clip: text;
         }
+
         
         .hero-description {
             font-family: "Montserrat", sans-serif;
