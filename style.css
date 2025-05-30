@@ -106,13 +106,13 @@
         
         .hero-title {
             font-family: "Montserrat", sans-serif;
+            color: var(--dark)
             font-size: 3.5rem;
             font-weight: 800;
             margin-bottom: 20px;
             line-height: 1.2;
             -webkit-background-clip: text;
             background-clip: text;
-            color: var(--dark)
         }
         
         .hero-description {

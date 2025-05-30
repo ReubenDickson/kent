@@ -50,34 +50,7 @@
             margin: 0 auto;
         }
         
-        .hero-subtitle {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: var(--accent);
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
         
-        .hero-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            line-height: 1.2;
-            background: linear-gradient(to right, #fff, var(--accent));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        
-        .hero-description {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
-            margin-bottom: 40px;
-            opacity: 0.9;
-        }
         
         .countdown {
             display: flex;
