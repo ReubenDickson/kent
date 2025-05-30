@@ -62,7 +62,7 @@
         /* Hero Section */
         .hero {
             font-family: "Montserrat", sans-serif;
-            background: linear-gradient(135deg, rgba(26, 26, 46, 0.9) 0%, rgba(26, 26, 46, 0.7) 100%), url('https://images.pexels.com/photos/3825568/pexels-photo-3825568.jpeg?auto=compress&cs=tinysrgb&w=1600') repeat-x center/cover;
+            background: linear-gradient(135deg, rgba(233, 36, 118, 0.9) 0%, rgba(224, 114, 165, 0.7) 100%);
             color: white;
             padding: 100px 0;
             text-align: center;
