@@ -110,7 +110,7 @@
             font-weight: 800;
             margin-bottom: 20px;
             line-height: 1.2;
-            background: linear-gradient(to right, #fff, var(--accent));
+            background: linear-gradient(to right, #1d1c1c, var(--accent));
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
