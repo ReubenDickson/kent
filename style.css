@@ -113,7 +113,7 @@
             background: linear-gradient(to right, #1f1a1a, var(--accent));
             -webkit-background-clip: text;
             background-clip: text;
-            color: transparent;
+            color: var(--dark);
         }
 
         
