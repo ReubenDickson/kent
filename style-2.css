@@ -1,25 +1,11 @@
         /* Global Styles */
-        :root {
-            --primary: #430069;
-            --secondary: #ff9696;
-            --accent: #B9E0FF;
-            --dark: #1f1a1a;
-            --light: #F5F5F5;
-            --success: #109114;
-            --warning: #FF9800;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Playfair Display', serif;
-        }
-        
         body {
             background-color: #f8f9fa;
-            color: #333;
+            background: linear-gradient(120deg, var(--light), var(--light) 70%, var(--secondary));
+            color: var(--dark);
             line-height: 1.6;
+            overflow-x: hidden;
+            font-family: 'Playfair Display', serif;
         }
         
         .container {
@@ -64,34 +50,7 @@
             margin: 0 auto;
         }
         
-        .hero-subtitle {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: var(--accent);
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
         
-        .hero-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            line-height: 1.2;
-            background: linear-gradient(to right, #fff, var(--accent));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        
-        .hero-description {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
-            margin-bottom: 40px;
-            opacity: 0.9;
-        }
         
         .countdown {
             display: flex;
