@@ -915,14 +915,14 @@ header {
 
         /* Speaker Section */
         .speaker-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #667eea 100%);
-            color: white;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: var(--secondary);
             padding: 100px 20px;
             position: relative;
             overflow: hidden;
         }
 
-        .speaker-section::before {
+        .speaker-section-1::before { /* Temporarily remive the section before styles */
             content: '';
             position: absolute;
             top: 0;
