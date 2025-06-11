@@ -742,8 +742,8 @@ header {
 }
 
 .secondary-btn {
-    background-color: transparent;
-    color: white;
+    background-color: var(--dark);
+    color: var(--accent);
     border: 2px solid white;
 }
 
