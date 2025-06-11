@@ -956,7 +956,7 @@ header {
         }
 
         .highlight-text {
-            color: #ffd700;
+            color: var(--secondary);
             text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
         }
 
@@ -995,7 +995,7 @@ header {
         }
 
         .featured-speaker {
-            border: 2px solid #ffd700;
+            border: 2px solid var(--secondary);
             box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
         }
 
@@ -1021,7 +1021,7 @@ header {
             position: absolute;
             top: -15px;
             right: -15px;
-            background: #ffd700;
+            background: var(--secondary);
             color: #333;
             padding: 0.4rem 0.9rem;
             border-radius: 20px;
@@ -1069,7 +1069,7 @@ header {
 
         .speaker-topic {
             font-size: 1.1rem;
-            color: #ffd700;
+            color: var(--dark);
             font-style: italic;
             font-weight: 600;
         }
@@ -1077,7 +1077,7 @@ header {
         .speaker-quote {
             font-size: 1.2rem;
             font-style: italic;
-            color: rgba(255,255,255,0.9);
+            color: rgba(31, 13, 13, 0.9);
             line-height: 1.4;
             margin: 1rem 0;
         }
@@ -1099,7 +1099,7 @@ header {
         }
 
         .social-proof {
-            color: #ffd700;
+            color: var(--secondary);
             font-weight: 600;
             font-size: 0.9rem;
         }
@@ -1158,13 +1158,13 @@ header {
         .speaker-count {
             font-size: 4rem;
             font-weight: 800;
-            color: #ffd700;
+            color: var(--secondary);
             margin-bottom: 1rem;
             text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
         }
 
         .coming-soon {
-            color: #ffd700;
+            color: var(--secondary);
             font-weight: 600;
             margin-top: 1rem;
         }
