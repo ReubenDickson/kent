@@ -44,7 +44,7 @@
             display: inline-block;
             padding: 15px 30px;
             background-color: var(--primary);
-            color: var(--light);
+            color: var(--light) !important;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
