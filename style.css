@@ -60,6 +60,15 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(108, 65, 242, 0.4);
         }
+
+        
+        /*Disable Wordpress Header on Sales page on Desktop view */
+        @media screen and (min-width: 768px) {
+          body.page-id-5796 .site-header {
+            display: none !important;
+              }
+        }
+
         
         /* Hero Section */
         .hero {
