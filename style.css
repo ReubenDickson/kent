@@ -729,7 +729,7 @@ header {
     gap: 1rem;
 }
 
-.primary-btn, .secondary-btn {
+.primary-btn {
     background-color: var(--primary);
     color: var(--light);
     padding: 1rem 2rem;
@@ -753,8 +753,8 @@ header {
 }
 
 .secondary-btn {
-    background-color: var(--dark);
-    color: var(--accent);
+    background-color: var(--secondary);
+    color: var(--light);
     border: 2px solid white;
 }
 
@@ -2098,4 +2098,10 @@ footer {
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
+        }
+
+
+        /* Extra CSS */
+        .footer-links {
+            color: var(--light, #ffffff)
         }
