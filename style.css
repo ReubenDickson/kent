@@ -259,7 +259,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="30" cy="5" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="15" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="8" r="1.2" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="12" r="1" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            background: url('data:image/svg+xml,') repeat;
             animation: float 20s ease-in-out infinite;
         }
 
@@ -510,7 +510,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><circle cx="30" cy="30" r="1.5" fill="rgba(255,255,255,0.05)"/></svg>') repeat;
+            background: url('data:image/svg+xml,') repeat;
             animation: float 15s ease-in-out infinite;
         }
 
@@ -729,7 +729,7 @@ header {
     gap: 1rem;
 }
 
-.primary-btn {
+.primary-btn, .secondary-btn {
     background-color: var(--primary);
     color: var(--light);
     padding: 1rem 2rem;
@@ -753,8 +753,8 @@ header {
 }
 
 .secondary-btn {
-    background-color: white;
-    color: var(--primary);
+    background-color: var(--dark);
+    color: var(--accent);
     border: 2px solid white;
 }
 
@@ -2098,10 +2098,4 @@ footer {
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
-        }
-
-
-        /* Extra CSS */
-        .footer-links {
-            color: var(--light, #ffffff)
         }
